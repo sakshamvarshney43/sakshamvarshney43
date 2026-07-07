@@ -1,0 +1,44 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="898" height="258" rx="14" fill="#11151C" stroke="#1F2430" stroke-width="1.5"/>
+  <text x="24" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2" fill="#8B95A5">FORKTALE — DATA FLOW</text>
+
+  <defs>
+    <marker id="arrowF" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#3B82F6"/>
+    </marker>
+  </defs>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+    <rect x="40" y="100" width="110" height="46" rx="8" fill="#0B0E14" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="95" y="128" fill="#E5E9F0" text-anchor="middle">User</text>
+
+    <rect x="210" y="100" width="110" height="46" rx="8" fill="#0B0E14" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="265" y="128" fill="#E5E9F0" text-anchor="middle">Story</text>
+
+    <rect x="380" y="100" width="110" height="46" rx="8" fill="#0B0E14" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="435" y="128" fill="#E5E9F0" text-anchor="middle">Branch</text>
+
+    <rect x="550" y="100" width="130" height="46" rx="8" fill="#0B0E14" stroke="#3B82F6" stroke-width="1.5"/>
+    <text x="615" y="128" fill="#E5E9F0" text-anchor="middle">Commit</text>
+  </g>
+
+  <g stroke="#3B82F6" stroke-width="1.5" fill="none" marker-end="url(#arrowF)">
+    <line x1="150" y1="123" x2="205" y2="123"/>
+    <line x1="320" y1="123" x2="375" y2="123"/>
+    <line x1="490" y1="123" x2="545" y2="123"/>
+  </g>
+
+  <path d="M 680 108 C 725 90, 725 55, 682 50 C 660 48, 642 62, 642 85"
+        stroke="#3B82F6" stroke-width="1.5" fill="none" marker-end="url(#arrowF)"/>
+  <text x="695" y="42" font-family="ui-monospace, monospace" font-size="10" fill="#8B95A5">self-referential parent → child FK</text>
+
+  <rect x="370" y="80" width="320" height="90" rx="10" fill="none" stroke="#22C55E" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="382" y="192" font-family="ui-monospace, monospace" font-size="10" fill="#22C55E">RBAC — VIEWER / EDITOR (middleware-enforced, IDOR-checked)</text>
+
+  <rect x="210" y="196" width="230" height="46" rx="8" fill="#0B0E14" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="325" y="216" font-family="ui-monospace, monospace" font-size="10" fill="#E5E9F0" text-anchor="middle">Gemini 2.5 Flash · SSE stream</text>
+  <text x="325" y="230" font-family="ui-monospace, monospace" font-size="9" fill="#F59E0B" text-anchor="middle">rate-limited · 10 req/min</text>
+  <line x1="265" y1="196" x2="265" y2="146" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="3 3"/>
+
+  <text x="876" y="248" font-family="ui-monospace, monospace" font-size="9" fill="#8B95A5" text-anchor="end">40+ REST APIs · atomic forking via Prisma $transaction</text>
+</svg>
