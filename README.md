@@ -23,9 +23,9 @@
 
 ## About Me
 
-I'm a Computer Science undergraduate at **Motilal Nehru National Institute of Technology, Allahabad**, focused on building production-grade full-stack systems with a strong emphasis on system design, database architecture, and secure API engineering. My work spans DAG-based data modelling, transactional data integrity, AI-assisted product features, and static analysis tooling — all shipped end-to-end from schema design to deployment.
+I'm a Computer Science undergraduate at **Motilal Nehru National Institute of Technology, Allahabad**, focused on building production-grade full-stack systems with a strong emphasis on system design, database architecture, and secure API engineering. My work spans DAG-based data modelling, transactional data integrity, AI-assisted product features, and static analysis tooling all shipped end-to-end from schema design to deployment.
 
-I care about the parts of engineering that don't show up in a demo GIF: query performance, race conditions, authorization boundaries, and clean CI pipelines. I approach every project with a product engineering mindset — not just "does it work," but "does it scale, does it hold up under abuse, and would a senior engineer sign off on it."
+I care about the parts of engineering that don't show up in a demo GIF: query performance, race conditions, authorization boundaries, and clean CI pipelines. I approach every project with a product engineering mindset not just "does it work," but "does it scale, does it hold up under abuse, and would a senior engineer sign off on it."
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ A full-stack platform that brings Git-style non-linear branching to collaborativ
 | **Impact**      | Atomic story forking via Prisma `$transaction` with DB-level duplicate-fork prevention; real-time AI writing assistance streamed token-by-token with cost-abuse rate limiting (10 req/min) |
 | **Repository**  | [github.com/sakshamvarshney43/ForkTale](https://github.com/sakshamvarshney43/ForkTale)                                                                                                     |
 
-ForkTale models story branching as a self-referential commit DAG (parent → child foreign key), enabling true non-linear versioning of narrative content — similar in spirit to Git, but purpose-built for prose. The backend is deployed on Railway with a Neon-hosted Postgres instance, and CI runs through a two-job parallel GitHub Actions pipeline.
+ForkTale models story branching as a self-referential commit DAG (parent → child foreign key), enabling true non-linear versioning of narrative content similar in spirit to Git, but purpose-built for prose. The backend is deployed on Railway with a Neon-hosted Postgres instance, and CI runs through a two-job parallel GitHub Actions pipeline.
 
 </details>
 
