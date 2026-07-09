@@ -1,46 +1,69 @@
-<svg width="1200" height="210" viewBox="0 0 1200 210" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <clipPath id="cardClip"><rect width="1200" height="210"/></clipPath>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#050A08"/>
-      <stop offset="100%" stop-color="#03100C"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0D"/>
+      <stop offset="100%" stop-color="#050506"/>
     </linearGradient>
-    <linearGradient id="fadeGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="90%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#000000"/>
-    </linearGradient>
-    <mask id="fadeBottom">
-      <rect width="1200" height="210" fill="url(#fadeGrad)"/>
+    <radialGradient id="vignette" cx="30%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#141414" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE8B5" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#FFC66D" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFC66D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spotlight" cx="0" cy="0" r="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <animate attributeName="cx" values="60;235;410;585;760" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="172;172;172;172;172" dur="5.5s" repeatCount="indefinite"/>
+    </radialGradient>
+    <mask id="revealMask">
+      <rect width="1200" height="300" fill="#1a1a1a"/>
+      <circle cx="60" cy="172" r="150" fill="url(#spotlight)">
+        <animate attributeName="cx" values="60;235;410;585;760" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+      </circle>
     </mask>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <g mask="url(#fadeBottom)">
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <rect width="1200" height="300" fill="url(#vignette)"/>
 
-    <rect width="1200" height="210" fill="url(#bgGrad)"/>
+  <text x="48" y="70" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="11" letter-spacing="4" fill="#6B7280">SOFTWARE ENGINEER · FULL-STACK · AI/ML</text>
 
-    <g clip-path="url(#cardClip)">
+  <text x="48" y="190" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#3A3A3E">Saksham Varshney</text>
+  <text x="48" y="190" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#FFFFFF" filter="url(#softGlow)" mask="url(#revealMask)">Saksham Varshney</text>
 
-      <g fill="#D4AF37" opacity="0.14">
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
-        <path d="M0,185 Q75,173 150,185 Q225,197 300,185 Q375,173 450,185 Q525,197 600,185 Q675,173 750,185 Q825,197 900,185 Q975,173 1050,185 Q1125,197 1200,185 Q1275,173 1350,185 Q1425,197 1500,185 Q1575,173 1650,185 Q1725,197 1800,185 Q1875,173 1950,185 Q2025,197 2100,185 Q2175,173 2250,185 Q2325,197 2400,185 L2400,210 L0,210 Z"/>
-      </g>
+  <rect x="48" y="210" width="0" height="2" fill="#FFC66D" opacity="0.8">
+    <animate attributeName="width" values="0;520" dur="5.5s" keyTimes="0;1" repeatCount="indefinite" calcMode="linear"/>
+  </rect>
 
-      <g fill="#0F766E" opacity="0.4">
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="9s" repeatCount="indefinite"/>
-        <path d="M0,194 Q75,184 150,194 Q225,204 300,194 Q375,184 450,194 Q525,204 600,194 Q675,184 750,194 Q825,204 900,194 Q975,184 1050,194 Q1125,204 1200,194 Q1275,184 1350,194 Q1425,204 1500,194 Q1575,184 1650,194 Q1725,204 1800,194 Q1875,184 1950,194 Q2025,204 2100,194 Q2175,184 2250,194 Q2325,204 2400,194 L2400,210 L0,210 Z"/>
-      </g>
+  <ellipse cy="180" rx="30" ry="6" fill="#000000">
+    <animate attributeName="cx" values="60;235;410;585;760" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0.15;0.55;0.15;0.55" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="rx" values="22;38;22;38;22" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+  </ellipse>
 
-      <g fill="#10B981" opacity="0.5">
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1200 0" dur="6s" repeatCount="indefinite"/>
-        <path d="M0,202 Q75,194 150,202 Q225,210 300,202 Q375,194 450,202 Q525,210 600,202 Q675,194 750,202 Q825,210 900,202 Q975,194 1050,202 Q1125,210 1200,202 Q1275,194 1350,202 Q1425,210 1500,202 Q1575,194 1650,202 Q1725,210 1800,202 Q1875,194 1950,202 Q2025,210 2100,202 Q2175,194 2250,202 Q2325,210 2400,202 L2400,210 L0,210 Z"/>
-      </g>
+  <circle r="48" fill="url(#bulbGlow)">
+    <animate attributeName="cx" values="60;235;410;585;760" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;70;150;70;150" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#FFF6E0">
+    <animate attributeName="cx" values="60;235;410;585;760" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;70;150;70;150" keyTimes="0;0.25;0.5;0.75;1" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
 
-    </g>
-
-  </g>
-
-  <text x="48" y="82" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="11" letter-spacing="3" fill="#E9C46A">SOFTWARE ENGINEER · FULL-STACK · AI/ML</text>
-  <text x="48" y="128" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#ECFDF5">Saksham Varshney</text>
-  <text x="48" y="156" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="13" fill="#A7F3D0">Building production systems · MNNIT Allahabad</text>
+  <text x="48" y="246" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14" fill="#9CA3AF" opacity="0">
+    Building production systems · MNNIT Allahabad
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.7;1" dur="5.5s" repeatCount="indefinite"/>
+  </text>
 </svg>
