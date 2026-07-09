@@ -1,71 +1,73 @@
 <svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="bg" cx="35%" cy="55%" r="85%">
-      <stop offset="0%" stop-color="#0E0E12"/>
-      <stop offset="100%" stop-color="#020203"/>
-    </radialGradient>
-    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FFE8B0"/>
-      <stop offset="55%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#9EE7FF"/>
+    <clipPath id="cardClip"><rect width="1200" height="300" rx="0"/></clipPath>
+    <clipPath id="termClip"><rect x="660" y="55" width="492" height="190" rx="14"/></clipPath>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#010409"/>
     </linearGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3.4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="1.4"/>
-    </filter>
+    <pattern id="contrib" width="96" height="96" patternUnits="userSpaceOnUse">
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-96 0" dur="22s" repeatCount="indefinite"/>
+      <rect width="96" height="96" fill="none"/>
+      <g fill="#161B22"><rect x="0" y="0" width="10" height="10" rx="2"/><rect x="16" y="0" width="10" height="10" rx="2"/><rect x="32" y="0" width="10" height="10" rx="2"/><rect x="48" y="0" width="10" height="10" rx="2"/><rect x="64" y="0" width="10" height="10" rx="2"/><rect x="80" y="0" width="10" height="10" rx="2"/>
+        <rect x="0" y="16" width="10" height="10" rx="2"/><rect x="32" y="16" width="10" height="10" rx="2"/><rect x="48" y="16" width="10" height="10" rx="2"/><rect x="80" y="16" width="10" height="10" rx="2"/>
+        <rect x="16" y="32" width="10" height="10" rx="2"/><rect x="48" y="32" width="10" height="10" rx="2"/><rect x="64" y="32" width="10" height="10" rx="2"/>
+        <rect x="0" y="48" width="10" height="10" rx="2"/><rect x="16" y="48" width="10" height="10" rx="2"/><rect x="80" y="48" width="10" height="10" rx="2"/>
+        <rect x="32" y="64" width="10" height="10" rx="2"/><rect x="64" y="64" width="10" height="10" rx="2"/><rect x="80" y="64" width="10" height="10" rx="2"/>
+        <rect x="0" y="80" width="10" height="10" rx="2"/><rect x="48" y="80" width="10" height="10" rx="2"/><rect x="16" y="80" width="10" height="10" rx="2"/>
+      </g>
+      <g fill="#0E4429"><rect x="16" y="16" width="10" height="10" rx="2"/><rect x="64" y="16" width="10" height="10" rx="2"/><rect x="0" y="32" width="10" height="10" rx="2"/><rect x="80" y="32" width="10" height="10" rx="2"/><rect x="32" y="48" width="10" height="10" rx="2"/><rect x="64" y="48" width="10" height="10" rx="2"/><rect x="0" y="64" width="10" height="10" rx="2"/><rect x="16" y="64" width="10" height="10" rx="2"/><rect x="64" y="80" width="10" height="10" rx="2"/></g>
+      <g fill="#006D32"><rect x="48" y="48" width="10" height="10" rx="2"/><rect x="32" y="32" width="10" height="10" rx="2"/><rect x="32" y="80" width="10" height="10" rx="2"/><rect x="80" y="80" width="10" height="10" rx="2"/></g>
+      <g fill="#26A641"><rect x="48" y="16" width="10" height="10" rx="2" opacity="0"/><rect x="64" y="0" width="10" height="10" rx="2" opacity="0"/></g>
+      <g fill="#39D353"><rect x="0" y="0" width="10" height="10" rx="2" opacity="0"/></g>
+    </pattern>
+    <linearGradient id="fadeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fadePattern"><rect width="1200" height="300" fill="url(#fadeGrad)"/></mask>
   </defs>
 
-  <rect width="1200" height="300" fill="url(#bg)"/>
-
-  <g fill="#FFFFFF" opacity="0.25">
-    <circle cx="120" cy="40" r="1"/><circle cx="240" cy="90" r="1.2"/><circle cx="380" cy="20" r="1"/>
-    <circle cx="520" cy="60" r="1.3"/><circle cx="700" cy="30" r="1"/><circle cx="880" cy="70" r="1.2"/>
-    <circle cx="1020" cy="45" r="1"/><circle cx="1140" cy="90" r="1.3"/><circle cx="60" cy="260" r="1"/>
-    <circle cx="300" cy="270" r="1.2"/><circle cx="640" cy="250" r="1"/><circle cx="980" cy="265" r="1.3"/>
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <g clip-path="url(#cardClip)" mask="url(#fadePattern)">
+    <rect width="1200" height="300" fill="url(#contrib)"/>
   </g>
 
-  <g stroke-linecap="round">
-    <circle r="3" fill="#FFD98A"><animate attributeName="cx" values="20;120;120;20" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="20;150;150;20" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#7DD3FC"><animate attributeName="cx" values="1180;560;560;1180" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="30;140;140;30" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.8" fill="#FFFFFF"><animate attributeName="cx" values="10;90;90;10" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="280;180;180;280" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#6EE7B7"><animate attributeName="cx" values="1190;580;580;1190" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="270;175;175;270" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="3" fill="#FFD98A"><animate attributeName="cx" values="600;300;300;600" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="10;145;145;10" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.6" fill="#7DD3FC"><animate attributeName="cx" values="600;320;320;600" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="295;185;185;295" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.2" fill="#FFFFFF"><animate attributeName="cx" values="50;150;150;50" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="150;160;160;150" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="3" fill="#FFD98A"><animate attributeName="cx" values="1150;540;540;1150" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="150;160;160;150" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#6EE7B7"><animate attributeName="cx" values="300;200;200;300" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="5;140;140;5" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.6" fill="#7DD3FC"><animate attributeName="cx" values="900;450;450;900" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="5;140;140;5" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#FFFFFF"><animate attributeName="cx" values="300;220;220;300" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="298;185;185;298" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="3" fill="#FFD98A"><animate attributeName="cx" values="900;470;470;900" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="298;185;185;298" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.2" fill="#7DD3FC"><animate attributeName="cx" values="0;70;70;0" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="80;155;155;80" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.6" fill="#6EE7B7"><animate attributeName="cx" values="1200;600;600;1200" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="80;150;150;80" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="3" fill="#FFD98A"><animate attributeName="cx" values="0;100;100;0" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="220;175;175;220" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#FFFFFF"><animate attributeName="cx" values="1200;560;560;1200" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="220;180;180;220" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.6" fill="#7DD3FC"><animate attributeName="cx" values="400;250;250;400" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="0;142;142;0" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="2.4" fill="#6EE7B7"><animate attributeName="cx" values="800;400;400;800" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="cy" values="0;142;142;0" keyTimes="0;0.3;0.35;1" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.3;0.35;0.98;1" dur="6s" repeatCount="indefinite"/></circle>
+<text x="48" y="90" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="11" letter-spacing="3" fill="#3FB950">FULL-STACK · DSA · AI/ML</text>
+<text x="48" y="152" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#F0F6FC">Saksham Varshney</text>
+<text x="48" y="184" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14" fill="#8B949E">Building production ready web applications · MNNIT Allahabad</text>
+
+  <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="12" font-weight="500">
+    <rect x="48" y="216" width="68" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="82" y="234" text-anchor="middle" fill="#79C0FF">React</text>
+    <rect x="126" y="216" width="86" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="169" y="234" text-anchor="middle" fill="#79C0FF">Node.js</text>
+    <rect x="222" y="216" width="106" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="275" y="234" text-anchor="middle" fill="#79C0FF">TypeScript</text>
+    <rect x="338" y="216" width="76" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="376" y="234" text-anchor="middle" fill="#79C0FF">AI / ML</text>
   </g>
 
-  <circle cx="330" cy="162" r="0" fill="none" stroke="#FFE8B0" stroke-width="1.5" filter="url(#softBlur)">
-    <animate attributeName="r" values="0;0;60;380;380" keyTimes="0;0.28;0.35;0.62;1" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.28;0.35;0.62;1" dur="6s" repeatCount="indefinite"/>
-  </circle>
+  <g clip-path="url(#termClip)">
+    <rect x="660" y="55" width="492" height="190" fill="#0D1117"/>
+    <rect x="660" y="55" width="492" height="32" fill="#161B22"/>
+    <circle cx="682" cy="71" r="5" fill="#FF5F56"/>
+    <circle cx="700" cy="71" r="5" fill="#FFBD2E"/>
+    <circle cx="718" cy="71" r="5" fill="#27C93F"/>
+    <text x="742" y="76" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="12" fill="#8B949E">saksham@mnnit:~</text>
 
-  <text x="48" y="72" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="11" letter-spacing="4" fill="#C7C6C0">FULL-STACK · DSA · AI/ML</text>
-  <circle cx="320" cy="68" r="3.5" fill="#6EE7B7">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
-  </circle>
+    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14">
+      <text x="684" y="112" fill="#3FB950">$<tspan fill="#C9D1D9"> whoami</tspan></text>
+      <text x="684" y="140" fill="#79C0FF">saksham_varshney</text>
+      <text x="684" y="168" fill="#3FB950">$<tspan fill="#C9D1D9"> cat stack.txt</tspan></text>
+      <text x="684" y="196" fill="#C9D1D9">React · Node · TypeScript · Prisma</text>
+      <text x="684" y="224" fill="#3FB950">$</text>
+    </g>
+    <rect x="698" y="212" width="8" height="15" fill="#C9D1D9">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="660" y="55" width="492" height="190" rx="14" fill="none" stroke="#30363D" stroke-width="1"/>
 
-  <g>
-    <animateTransform attributeName="transform" type="translate" values="0,16;0,16;0,0;0,0;0,16" keyTimes="0;0.3;0.4;0.95;1" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3;0.4;0.95;1" dur="6s" repeatCount="indefinite"/>
-    <text x="48" y="176" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="url(#nameGrad)" filter="url(#glow)">Saksham Varshney</text>
-  </g>
-
-  <g>
-    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.36;0.46;0.95;1" dur="6s" repeatCount="indefinite"/>
-    <text x="48" y="208" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14" fill="#B8B6AE">Building scalable web applications · MNNIT Allahabad</text>
   </g>
 </svg>

@@ -1,73 +1,294 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="cardClip"><rect width="1200" height="300" rx="0"/></clipPath>
-    <clipPath id="termClip"><rect x="660" y="55" width="492" height="190" rx="14"/></clipPath>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="100%" stop-color="#010409"/>
-    </linearGradient>
-    <pattern id="contrib" width="96" height="96" patternUnits="userSpaceOnUse">
-      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-96 0" dur="22s" repeatCount="indefinite"/>
-      <rect width="96" height="96" fill="none"/>
-      <g fill="#161B22"><rect x="0" y="0" width="10" height="10" rx="2"/><rect x="16" y="0" width="10" height="10" rx="2"/><rect x="32" y="0" width="10" height="10" rx="2"/><rect x="48" y="0" width="10" height="10" rx="2"/><rect x="64" y="0" width="10" height="10" rx="2"/><rect x="80" y="0" width="10" height="10" rx="2"/>
-        <rect x="0" y="16" width="10" height="10" rx="2"/><rect x="32" y="16" width="10" height="10" rx="2"/><rect x="48" y="16" width="10" height="10" rx="2"/><rect x="80" y="16" width="10" height="10" rx="2"/>
-        <rect x="16" y="32" width="10" height="10" rx="2"/><rect x="48" y="32" width="10" height="10" rx="2"/><rect x="64" y="32" width="10" height="10" rx="2"/>
-        <rect x="0" y="48" width="10" height="10" rx="2"/><rect x="16" y="48" width="10" height="10" rx="2"/><rect x="80" y="48" width="10" height="10" rx="2"/>
-        <rect x="32" y="64" width="10" height="10" rx="2"/><rect x="64" y="64" width="10" height="10" rx="2"/><rect x="80" y="64" width="10" height="10" rx="2"/>
-        <rect x="0" y="80" width="10" height="10" rx="2"/><rect x="48" y="80" width="10" height="10" rx="2"/><rect x="16" y="80" width="10" height="10" rx="2"/>
-      </g>
-      <g fill="#0E4429"><rect x="16" y="16" width="10" height="10" rx="2"/><rect x="64" y="16" width="10" height="10" rx="2"/><rect x="0" y="32" width="10" height="10" rx="2"/><rect x="80" y="32" width="10" height="10" rx="2"/><rect x="32" y="48" width="10" height="10" rx="2"/><rect x="64" y="48" width="10" height="10" rx="2"/><rect x="0" y="64" width="10" height="10" rx="2"/><rect x="16" y="64" width="10" height="10" rx="2"/><rect x="64" y="80" width="10" height="10" rx="2"/></g>
-      <g fill="#006D32"><rect x="48" y="48" width="10" height="10" rx="2"/><rect x="32" y="32" width="10" height="10" rx="2"/><rect x="32" y="80" width="10" height="10" rx="2"/><rect x="80" y="80" width="10" height="10" rx="2"/></g>
-      <g fill="#26A641"><rect x="48" y="16" width="10" height="10" rx="2" opacity="0"/><rect x="64" y="0" width="10" height="10" rx="2" opacity="0"/></g>
-      <g fill="#39D353"><rect x="0" y="0" width="10" height="10" rx="2" opacity="0"/></g>
-    </pattern>
-    <linearGradient id="fadeGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
-      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-    </linearGradient>
-    <mask id="fadePattern"><rect width="1200" height="300" fill="url(#fadeGrad)"/></mask>
-  </defs>
+<div align="center">
 
-  <rect width="1200" height="300" fill="url(#bgGrad)"/>
-  <g clip-path="url(#cardClip)" mask="url(#fadePattern)">
-    <rect width="1200" height="300" fill="url(#contrib)"/>
-  </g>
+<img width="100%" src="./hero-wave.svg" />
 
-<text x="48" y="90" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="11" letter-spacing="3" fill="#3FB950">FULL-STACK · DSA · AI/ML</text>
-<text x="48" y="152" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" fill="#F0F6FC">Saksham Varshney</text>
-<text x="48" y="184" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14" fill="#8B949E">Building production ready web applications · MNNIT Allahabad</text>
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=650&lines=Building+Scalable+Full-Stack+Systems;Architecting+DAG-based+Data+Models;Exploring+AI%2FML+%2B+LLM+Integrations;CS+Undergrad+%40+MNNIT+Allahabad" alt="Typing SVG" />
+</a>
 
-  <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="12" font-weight="500">
-    <rect x="48" y="216" width="68" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="82" y="234" text-anchor="middle" fill="#79C0FF">React</text>
-    <rect x="126" y="216" width="86" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="169" y="234" text-anchor="middle" fill="#79C0FF">Node.js</text>
-    <rect x="222" y="216" width="106" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="275" y="234" text-anchor="middle" fill="#79C0FF">TypeScript</text>
-    <rect x="338" y="216" width="76" height="27" rx="13" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text x="376" y="234" text-anchor="middle" fill="#79C0FF">AI / ML</text>
-  </g>
+<br/>
 
-  <g clip-path="url(#termClip)">
-    <rect x="660" y="55" width="492" height="190" fill="#0D1117"/>
-    <rect x="660" y="55" width="492" height="32" fill="#161B22"/>
-    <circle cx="682" cy="71" r="5" fill="#FF5F56"/>
-    <circle cx="700" cy="71" r="5" fill="#FFBD2E"/>
-    <circle cx="718" cy="71" r="5" fill="#27C93F"/>
-    <text x="742" y="76" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="12" fill="#8B949E">saksham@mnnit:~</text>
+<a href="https://github.com/sakshamvarshney43"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="https://linkedin.com/in/saksham0043"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:sakshamvarshney43@gmail.com"><img src="https://img.shields.io/badge/Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://github.com/sakshamvarshney43"><img src="https://img.shields.io/badge/GitHub-064E3B?style=for-the-badge&logo=github&logoColor=white" /></a>
 
-    <g font-family="ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace" font-size="14">
-      <text x="684" y="112" fill="#3FB950">$<tspan fill="#C9D1D9"> whoami</tspan></text>
-      <text x="684" y="140" fill="#79C0FF">saksham_varshney</text>
-      <text x="684" y="168" fill="#3FB950">$<tspan fill="#C9D1D9"> cat stack.txt</tspan></text>
-      <text x="684" y="196" fill="#C9D1D9">React · Node · TypeScript · Prisma</text>
-      <text x="684" y="224" fill="#3FB950">$</text>
-    </g>
-    <rect x="698" y="212" width="8" height="15" fill="#C9D1D9">
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1.1s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="660" y="55" width="492" height="190" rx="14" fill="none" stroke="#30363D" stroke-width="1"/>
+<br/><br/>
 
-  </g>
-</svg>
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## About Me
+
+I'm a Computer Science undergraduate at **Motilal Nehru National Institute of Technology, Allahabad**, focused on building production-grade full-stack systems with a strong emphasis on system design, database architecture, and secure API engineering. My work spans DAG-based data modelling, transactional data integrity, AI-assisted product features, and static analysis tooling all shipped end-to-end from schema design to deployment.
+
+I care about the parts of engineering that don't show up in a demo GIF: query performance, race conditions, authorization boundaries, and clean CI pipelines. I approach every project with a product engineering mindset not just "does it work," but "does it scale, does it hold up under abuse, and would a senior engineer sign off on it."
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**Education**
+MNNIT Allahabad · B.Tech CSE
+CPI 8.31 · 2024–2028
+
+**Recognition**
+Reliance Foundation Scholar
+5,000 selected of 1,00,000+ applicants
+
+</td>
+<td width="50%" valign="top">
+
+**Currently Exploring**
+LLM-integrated product features
+Distributed systems fundamentals
+Advanced competitive programming
+
+**Open To**
+SDE Internships · Full-Stack Roles
+Open Source Collaboration
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Tech Stack
+
+<table>
+<tr><td valign="top" width="25%"><b>Languages</b></td><td valign="top"><img src="https://skillicons.dev/icons?i=cpp,java,py,js,ts,html,css&theme=dark" /></td></tr>
+<tr><td valign="top"><b>Frontend</b></td><td valign="top"><img src="https://skillicons.dev/icons?i=react,vite,tailwind&theme=dark" /></td></tr>
+<tr><td valign="top"><b>Backend & Data</b></td><td valign="top"><img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,prisma,fastapi&theme=dark" /></td></tr>
+<tr><td valign="top"><b>Cloud & Tooling</b></td><td valign="top"><img src="https://skillicons.dev/icons?i=git,github,githubactions,vercel,postman,vscode&theme=dark" /></td></tr>
+</table>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## AI / ML Expertise
+
+| Domain                              | Proficiency | Details                                                                                                                                                                               |
+| ----------------------------------- | :---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **LLM-Integrated Product Features** |   Applied   | Streamed token-by-token AI writing assistance across 5 endpoints using Gemini 2.5 Flash + Server-Sent Events, with dedicated rate-limiting middleware to prevent inference cost abuse |
+| **Recommendation Systems**          |   Applied   | Trained a TF-IDF + KNN model on 6,000+ recipes for personalized, multi-constraint filtering (cuisine, meal type, diet, cook time), served via a dedicated FastAPI microservice        |
+| **Classical ML Foundations**        |  Academic   | Search algorithms, adversarial search, and Naive Bayes classification implemented as part of coursework labs                                                                          |
+| **Data Pipelines for ML**           |   Applied   | Built ingredient auto-suggestion and pantry-matching pipelines enabling real-time model input updates from user-contributed data                                                      |
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Featured Projects
+
+<details>
+<summary><b>ForkTale — Collaborative Storytelling Platform with Git-Inspired Branching</b></summary>
+<br/>
+
+A full-stack platform that brings Git-style non-linear branching to collaborative fiction writing, backed by an 8-model relational schema and AI-assisted composition.
+
+| Aspect          | Details                                                                                                                                                                                    |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Stack**       | React.js, TypeScript, TanStack Query, Node.js, Express.js, PostgreSQL, Prisma ORM, JWT, Gemini 2.5 Flash, SSE, Cloudinary, Vercel, Railway, Neon, GitHub Actions                           |
+| **Scale**       | 8-model PostgreSQL schema · 40+ REST APIs · 13 lazy-loaded frontend routes                                                                                                                 |
+| **Performance** | Eliminated N+1 queries in the discovery feed (O(n) → O(1)) via nested Prisma includes; denormalized `latestCommitId` and `wordCount` to avoid expensive `ORDER BY`/`SUM` operations        |
+| **Security**    | Two-tier RBAC (VIEWER/EDITOR) enforced via middleware; IDOR prevention through strict resource-ownership validation against URL params                                                     |
+| **Impact**      | Atomic story forking via Prisma `$transaction` with DB-level duplicate-fork prevention; real-time AI writing assistance streamed token-by-token with cost-abuse rate limiting (10 req/min) |
+| **Repository**  | [github.com/sakshamvarshney43/ForkTale](https://github.com/sakshamvarshney43/ForkTale)                                                                                                     |
+
+ForkTale models story branching as a self-referential commit DAG (parent → child foreign key), enabling true non-linear versioning of narrative content similar in spirit to Git, but purpose-built for prose. The backend is deployed on Railway with a Neon-hosted Postgres instance, and CI runs through a two-job parallel GitHub Actions pipeline.
+
+</details>
+
+<details>
+<summary><b>CodeEclipse — Java OOP Tree Visualizer</b></summary>
+<br/>
+
+A static-analysis and visualization platform that parses raw Java source code — without compilation — to reconstruct and render class hierarchies.
+
+| Aspect          | Details                                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------------------------------- |
+| **Stack**       | React.js, Node.js, Express.js, MongoDB, React Flow, JavaScript                                             |
+| **Scale**       | Detects all four OOP relationship types: inheritance, aggregation, composition, and dependency             |
+| **Performance** | Interactive force-directed graph rendering with zoom, pan, and minimap support for large class hierarchies |
+| **Security**    | Structured error reporting and validation on uploaded source files                                         |
+| **Impact**      | File upload, smart class search, and PNG/PDF diagram export for shareable architecture documentation       |
+| **Repository**  | [github.com/sakshamvarshney43/Code-Eclipse](https://github.com/sakshamvarshney43/Code-Eclipse)             |
+
+Built with a teammate, CodeEclipse's core engine parses Java source directly to extract structural relationships — a non-trivial static-analysis problem — and renders the result as an explorable, zoomable dependency graph rather than a static diagram.
+
+</details>
+
+<details>
+<summary><b>IngrediChef — AI-Powered Recipe Recommendation Platform</b></summary>
+<br/>
+
+A recommendation engine that pairs ingredient-similarity modelling with user dietary preferences to suggest recipes and manage pantry inventory.
+
+| Aspect          | Details                                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Stack**       | React.js, Node.js, Python, FastAPI, MongoDB, scikit-learn                                                                      |
+| **Scale**       | TF-IDF + KNN model trained on 6,000+ recipes                                                                                   |
+| **Performance** | Predictions served via a dedicated FastAPI microservice, decoupled from the main Node.js backend                               |
+| **Security**    | Input validation on user-contributed recipe data feeding the autosuggestion pipeline                                           |
+| **Impact**      | Missing-ingredient detection with auto-generated grocery lists; real-time ingredient autosuggestion from user-contributed data |
+| **Repository**  | [github.com/sakshamvarshney43/IngrediChef](https://github.com/sakshamvarshney43/IngrediChef)                                   |
+
+</details>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Experience
+
+**Campus Ambassador & Contributor** · GirlScript Summer of Code (GSSoC)
+`2025`
+
+Represented GSSoC on campus while actively contributing to open-source projects and community discussions.
+
+- Ranked **Top 30 nationally** among campus ambassadors and earned the **Silver Badge**
+- Engaged consistently in open-source contribution workflows and community discussions
+
+`Open Source` `Community Building` `Git/GitHub`
+
+<br/>
+
+**Campus Ambassador** · Techfest, IIT Bombay
+`2025 – 2026`
+
+Led campus-level outreach for one of India's largest technical festivals.
+
+- Drove outreach and engagement for national-level technical events at IIT Bombay
+- Coordinated cross-campus communication and event promotion
+
+`Outreach` `Event Coordination` `Leadership`
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:D4AF37,100:03100C&height=2" />
+</div>
+
+## Achievements
+
+<div align="center">
+
+| Recognition                            | Details                                                                                         |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 🏆 **Reliance Foundation Scholarship** | Selected among **5,000 scholars** from **1,00,000+** applicants nationwide                      |
+| 🌐 **Nextwave CPL**                    | Global Rank **539** · College Rank **28** among 1.9k+ participants across IITs, NITs, and IIITs |
+| 💻 **Problem Solving**                 | **1500+** problems solved across LeetCode, Codeforces, CodeChef, and other platforms            |
+| 📊 **LeetCode Weekly 507**             | Rank **542**                                                                                    |
+| 📊 **CodeChef Starters 223**           | Rank **178**                                                                                    |
+| 📊 **Codeforces Round 1090**           | Rank **2527**                                                                                   |
+
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Certifications
+
+> Certifications in progress — this section will be updated as credentials are earned.
+
+<div align="center">
+
+![AWS](https://img.shields.io/badge/AWS-In%20Progress-03100C?style=flat-square&logo=amazonaws&logoColor=FF9900)
+![NPTEL](https://img.shields.io/badge/NPTEL-In%20Progress-03100C?style=flat-square&logo=googlescholar&logoColor=10B981)
+
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Coding Profiles
+
+<div align="center">
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-Cassie7-03100C?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/Cassie7)
+[![Codeforces](https://img.shields.io/badge/Codeforces-sakshamvarshney43-03100C?style=for-the-badge&logo=codeforces&logoColor=1F8ACB)](https://codeforces.com/profile/sakshamvarshney43)
+[![CodeChef](https://img.shields.io/badge/CodeChef-team__fish__34-03100C?style=for-the-badge&logo=codechef&logoColor=A0522D)](https://www.codechef.com/users/team_fish_34)
+[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Profile-03100C?style=for-the-badge&logo=geeksforgeeks&logoColor=2F8D46)](https://auth.geeksforgeeks.org/user/sakshamvarshney43)
+
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## GitHub Analytics
+
+<div align="center">
+<img width="49%" src="./profile/stats.svg" />
+<img width="49%" src="https://streak-stats.demolab.com/?user=sakshamvarshney43&hide_border=true&background=03100C&stroke=0F766E&ring=10B981&fire=D4AF37&currStreakLabel=D4AF37&sideNums=A7F3D0&sideLabels=C9D1D9&dates=6B7480" />
+
+<br/>
+
+<img width="60%" src="./profile/top-langs.svg" />
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Contribution Activity
+
+<div align="center">
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=sakshamvarshney43&hide_border=true&bg_color=03100C&color=A7F3D0&line=10B981&point=D4AF37&area=true&area_color=0F766E&custom_title=Contribution%20Activity" />
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/sakshamvarshney43/sakshamvarshney43/output/github-contribution-grid-snake-dark.svg" />
+</div>
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
+</div>
+
+## Current Focus
+
+```yaml
+learning:
+  - Advanced Data Structures & Algorithms
+  - System Design fundamentals
+  - LLM-integrated application patterns
+
+building:
+  - ForkTale (Git-inspired collaborative storytelling platform)
+  - CodeEclipse (Java OOP static analysis & visualization)
+
+exploring:
+  - Operating Systems internals
+  - Database internals & query optimization
+  - Distributed systems fundamentals
+
+open_to:
+  - SDE Internships
+  - Full-Stack Engineering Roles
+  - Open Source Collaboration
+```
+
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:D4AF37,100:03100C&height=2" />
+</div>
+
+<div align="center">
+
+_"Code is a craft — precision in the schema, discipline in the query, and clarity in the interface."_
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:03100C,35:0F766E,65:064E3B,100:03100C&height=140&section=footer" />
+
+</div>
