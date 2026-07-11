@@ -8,7 +8,7 @@
 
 <br/>
 
-<a href="https://github.com/sakshamvarshney43"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+<a href="portfolio.sakshamvarshney43.workers.dev"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
 <a href="https://linkedin.com/in/saksham0043"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:sakshamvarshney43@gmail.com"><img src="https://img.shields.io/badge/Email-0F766E?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://github.com/sakshamvarshney43"><img src="https://img.shields.io/badge/GitHub-064E3B?style=for-the-badge&logo=github&logoColor=white" /></a>
@@ -204,20 +204,6 @@ Led campus-level outreach for one of India's largest technical festivals.
 
 </div>
 
-<div align="center">
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
-</div>
-
-## Coding Profiles
-
-<div align="center">
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-Cassie7-03100C?style=for-the-badge&logo=leetcode&logoColor=FFA116)](https://leetcode.com/Cassie7)
-[![Codeforces](https://img.shields.io/badge/Codeforces-sakshamvarshney43-03100C?style=for-the-badge&logo=codeforces&logoColor=1F8ACB)](https://codeforces.com/profile/sakshamvarshney43)
-[![CodeChef](https://img.shields.io/badge/CodeChef-team__fish__34-03100C?style=for-the-badge&logo=codechef&logoColor=A0522D)](https://www.codechef.com/users/team_fish_34)
-[![GeeksforGeeks](https://img.shields.io/badge/GeeksforGeeks-Profile-03100C?style=for-the-badge&logo=geeksforgeeks&logoColor=2F8D46)](https://auth.geeksforgeeks.org/user/sakshamvarshney43)
-
-</div>
 
 <div align="center">
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:03100C,50:10B981,100:03100C&height=2" />
